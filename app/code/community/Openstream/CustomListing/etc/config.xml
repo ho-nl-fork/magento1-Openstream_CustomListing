@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Openstream_CustomListing>
+            <version>0.1.0</version>
+        </Openstream_CustomListing>
+    </modules>
+    <global>
+        <blocks>
+            <custom_listing>
+                <class>Openstream_CustomListing_Block</class>
+            </custom_listing>
+        </blocks>
+        <helpers>
+            <custom_listing>
+                <class>Openstream_CustomListing_Helper</class>
+            </custom_listing>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <custom_listing>
+                    <file>openstream/custom_listing.xml</file>
+                </custom_listing>
+            </updates>
+        </layout>
+    </frontend>
+</config>

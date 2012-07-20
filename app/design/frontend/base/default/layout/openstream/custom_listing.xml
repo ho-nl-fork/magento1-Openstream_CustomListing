@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <cms_page>
+        <reference name="head">
+            <action method="addCss"><stylesheet>openstream/custom_listing.css</stylesheet></action>
+        </reference>
+    </cms_page>
+</layout>
