@@ -4,20 +4,76 @@
         <name>All Products</name>
         <description>Adds the listing of all enabled products of the current store.</description>
         <is_email_compatible>1</is_email_compatible>
+        <parameters>
+            <template translate="label">
+                <label>Template</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>catalog/product/list.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>catalog/product/list.phtml</value>
+                        <label>Catalog Product List Template</label>
+                    </default>
+                </values>
+            </template>
+        </parameters>
     </custom_listing_all>
     <custom_listing_attribute type="custom_listing/attribute" translate="name description">
         <name>Products With Specific Attribute</name>
         <description>Adds the listing of all products with specific attribute.</description>
         <is_email_compatible>1</is_email_compatible>
+        <parameters>
+            <template translate="label">
+                <label>Template</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>catalog/product/list.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>catalog/product/list.phtml</value>
+                        <label>Catalog Product List Template</label>
+                    </default>
+                </values>
+            </template>
+        </parameters>
     </custom_listing_attribute>
     <custom_listing_bestsellers type="custom_listing/bestsellers" translate="name description">
         <name>Bestsellers</name>
         <description>Adds the listing of best selling products of the current store.</description>
         <is_email_compatible>1</is_email_compatible>
+        <parameters>
+            <template translate="label">
+                <label>Template</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>catalog/product/list.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>catalog/product/list.phtml</value>
+                        <label>Catalog Product List Template</label>
+                    </default>
+                </values>
+            </template>
+        </parameters>
     </custom_listing_bestsellers>
     <custom_listing_specials type="custom_listing/specials" translate="name description">
         <name>Specials</name>
         <description>Adds the listing of all products with special prices of the current store.</description>
         <is_email_compatible>1</is_email_compatible>
+        <parameters>
+            <template translate="label">
+                <label>Template</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>catalog/product/list.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>catalog/product/list.phtml</value>
+                        <label>Catalog Product List Template</label>
+                    </default>
+                </values>
+            </template>
+        </parameters>
     </custom_listing_specials>
 </widgets>
