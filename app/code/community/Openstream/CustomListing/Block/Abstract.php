@@ -1,6 +1,7 @@
 <?php
 
 class Openstream_CustomListing_Block_Abstract extends Mage_Catalog_Block_Product_List
+    implements Mage_Widget_Block_Interface
 {
     protected function _beforeToHtml()
     {
