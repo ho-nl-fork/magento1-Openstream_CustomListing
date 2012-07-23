@@ -1,6 +1,6 @@
 <?php
 
-class Openstream_CustomListing_Block_All extends Openstream_CustomListing_Block_Abstract implements Mage_Widget_Block_Interface
+class Openstream_CustomListing_Block_All extends Openstream_CustomListing_Block_Abstract
 {
     protected function _getProductCollection()
     {
