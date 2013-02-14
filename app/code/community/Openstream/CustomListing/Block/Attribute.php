@@ -9,6 +9,7 @@ class Openstream_CustomListing_Block_Attribute extends Openstream_CustomListing_
                 $this->_productCollection = Mage::getResourceModel('reports/product_collection');
                 $this->_productCollection->addAttributeToFilter($attribute_code, array('eq' => $attribute_value))
                                          ->addAttributeToSelect('*')
+                                         ->setVisibility($this->_visibleInCatalogIds)
                                          ->addStoreFilter();
             }
         }

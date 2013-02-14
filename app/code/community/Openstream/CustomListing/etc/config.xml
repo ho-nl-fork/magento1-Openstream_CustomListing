@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Openstream_CustomListing>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
         </Openstream_CustomListing>
     </modules>
     <global>
@@ -11,6 +11,17 @@
                 <class>Openstream_CustomListing_Block</class>
             </custom_listing>
         </blocks>
+        <models>
+            <custom_listing>
+                <class>Openstream_CustomListing_Model</class>
+            </custom_listing>
+            <!-- this rewrite is required to fix a known bug of addOrderedQty not working with flat catalog -->
+            <reports_resource>
+                <rewrite>
+                    <product_collection>Openstream_CustomListing_Model_Resource_Product_Collection</product_collection>
+                </rewrite>
+            </reports_resource>
+        </models>
         <helpers>
             <custom_listing>
                 <class>Openstream_CustomListing_Helper</class>

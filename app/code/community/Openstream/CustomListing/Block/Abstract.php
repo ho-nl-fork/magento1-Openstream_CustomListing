@@ -3,6 +3,14 @@
 class Openstream_CustomListing_Block_Abstract extends Mage_Catalog_Block_Product_List
     implements Mage_Widget_Block_Interface
 {
+    protected $_visibleInCatalogIds;
+
+    public function _construct()
+    {
+        $this->_visibleInCatalogIds = Mage::getSingleton('catalog/product_visibility')->getVisibleInCatalogIds();
+        parent::_construct();
+    }
+
     protected function _beforeToHtml()
     {
         $blockName = $this->getToolbarBlockName();

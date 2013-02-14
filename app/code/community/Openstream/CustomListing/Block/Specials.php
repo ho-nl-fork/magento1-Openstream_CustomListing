@@ -16,6 +16,7 @@ class Openstream_CustomListing_Block_Specials extends Openstream_CustomListing_B
                 array('attribute' => 'special_to_date', 'null' => '')
             ), null, 'left')
                 ->addAttributeToSelect('*')
+                ->setVisibility($this->_visibleInCatalogIds)
                 ->addStoreFilter();
         }
         return $this->_productCollection;
