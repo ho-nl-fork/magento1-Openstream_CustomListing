@@ -1,9 +1,8 @@
 #
 # Openstream_CustomListing modman configuration
 #
-
-app/code/community/Openstream/CustomListing                           app/code/community/Openstream/CustomListing
-app/etc/modules/Openstream_CustomListing.xml                          app/etc/modules/Openstream_CustomListing.xml
-app/design/frontend/base/default/layout/openstream/custom_listing.xml app/design/frontend/base/default/layout/openstream/custom_listing.xml
-skin/frontend/base/default/openstream/custom_listing.css              skin/frontend/base/default/openstream/custom_listing.css
-
+app/code/community/Openstream/*                                     app/code/community/Openstream/
+app/etc/modules/*                                                   app/etc/modules/
+app/design/frontend/base/default/layout/openstream/*                app/design/frontend/base/default/layout/openstream/
+app/design/frontend/base/default/template/catalog/product/list/*    app/design/frontend/base/default/template/catalog/product/list/
+skin/frontend/base/default/openstream/*                             skin/frontend/base/default/openstream/

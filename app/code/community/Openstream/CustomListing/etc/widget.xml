@@ -17,6 +17,20 @@
                     </default>
                 </values>
             </template>
+            <show_toolbar>
+                <label>Show Toolbar</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>1</value>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+            </show_toolbar>
+            <list_mode>
+                <label>List Mode</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>1</value>
+                <source_model>custom_listing/widget_source_listMode</source_model>
+            </list_mode>
         </parameters>
     </custom_listing_all>
     <custom_listing_attribute type="custom_listing/attribute" translate="name description">
