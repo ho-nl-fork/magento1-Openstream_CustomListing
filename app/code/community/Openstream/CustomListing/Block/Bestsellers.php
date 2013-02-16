@@ -8,9 +8,12 @@ class Openstream_CustomListing_Block_Bestsellers extends Openstream_CustomListin
             $this->_productCollection = Mage::getResourceModel('reports/product_collection');
             $this->_productCollection->addOrderedQty()
                                      ->addAttributeToSelect('*')
-                                     ->setVisibility($this->_visibleInCatalogIds)
                                      ->addStoreFilter()
                                      ->setOrder('ordered_qty', 'desc');
+
+            /* @var $productVisibility Mage_Catalog_Model_Product_Visibility */
+            $productVisibility = Mage::getSingleton('catalog/product_visibility');
+            $productVisibility->addVisibleInCatalogFilterToCollection($this->_productCollection);
         }
         return $this->_productCollection;
     }
