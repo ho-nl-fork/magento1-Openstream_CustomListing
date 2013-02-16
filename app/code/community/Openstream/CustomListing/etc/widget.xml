@@ -48,6 +48,18 @@
                 </depends>
                 <description>Leave empty for default</description>
             </column_count>
+            <limit>
+                <label>Product Limit</label>
+                <visible>1</visible>
+                <type>text</type>
+                <value>1</value>
+                <depends>
+                    <show_toolbar>
+                        <value>0</value>
+                    </show_toolbar>
+                </depends>
+                <description>Leave empty for all products</description>
+            </limit>
         </parameters>
     </custom_listing_all>
     <custom_listing_attribute type="custom_listing/attribute" translate="name description">
@@ -67,6 +79,49 @@
                     </default>
                 </values>
             </template>
+            <show_toolbar>
+                <label>Show Toolbar</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>1</value>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+            </show_toolbar>
+            <list_mode>
+                <label>List Mode</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>1</value>
+                <source_model>custom_listing/widget_source_listMode</source_model>
+            </list_mode>
+            <column_count>
+                <label>Grid Column Count</label>
+                <visible>1</visible>
+                <type>text</type>
+                <value>1</value>
+                <depends>
+                    <list_mode>
+                        <values>
+                            <empty/>
+                            <grid>grid</grid>
+                            <grid_list>grid-list</grid_list>
+                            <list_grid>list-grid</list_grid>
+                        </values>
+                    </list_mode>
+                </depends>
+                <description>Leave empty for default</description>
+            </column_count>
+            <limit>
+                <label>Product Limit</label>
+                <visible>1</visible>
+                <type>text</type>
+                <value>1</value>
+                <depends>
+                    <show_toolbar>
+                        <value>0</value>
+                    </show_toolbar>
+                </depends>
+                <description>Leave empty for all products</description>
+            </limit>
         </parameters>
     </custom_listing_attribute>
     <custom_listing_bestsellers type="custom_listing/bestsellers" translate="name description">
@@ -86,6 +141,49 @@
                     </default>
                 </values>
             </template>
+            <show_toolbar>
+                <label>Show Toolbar</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>1</value>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+            </show_toolbar>
+            <list_mode>
+                <label>List Mode</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>1</value>
+                <source_model>custom_listing/widget_source_listMode</source_model>
+            </list_mode>
+            <column_count>
+                <label>Grid Column Count</label>
+                <visible>1</visible>
+                <type>text</type>
+                <value>1</value>
+                <depends>
+                    <list_mode>
+                        <values>
+                            <empty/>
+                            <grid>grid</grid>
+                            <grid_list>grid-list</grid_list>
+                            <list_grid>list-grid</list_grid>
+                        </values>
+                    </list_mode>
+                </depends>
+                <description>Leave empty for default</description>
+            </column_count>
+            <limit>
+                <label>Product Limit</label>
+                <visible>1</visible>
+                <type>text</type>
+                <value>1</value>
+                <depends>
+                    <show_toolbar>
+                        <value>0</value>
+                    </show_toolbar>
+                </depends>
+                <description>Leave empty for all products</description>
+            </limit>
         </parameters>
     </custom_listing_bestsellers>
     <custom_listing_specials type="custom_listing/specials" translate="name description">
@@ -105,6 +203,49 @@
                     </default>
                 </values>
             </template>
+            <show_toolbar>
+                <label>Show Toolbar</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>1</value>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+            </show_toolbar>
+            <list_mode>
+                <label>List Mode</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>1</value>
+                <source_model>custom_listing/widget_source_listMode</source_model>
+            </list_mode>
+            <column_count>
+                <label>Grid Column Count</label>
+                <visible>1</visible>
+                <type>text</type>
+                <value>1</value>
+                <depends>
+                    <list_mode>
+                        <values>
+                            <empty/>
+                            <grid>grid</grid>
+                            <grid_list>grid-list</grid_list>
+                            <list_grid>list-grid</list_grid>
+                        </values>
+                    </list_mode>
+                </depends>
+                <description>Leave empty for default</description>
+            </column_count>
+            <limit>
+                <label>Product Limit</label>
+                <visible>1</visible>
+                <type>text</type>
+                <value>1</value>
+                <depends>
+                    <show_toolbar>
+                        <value>0</value>
+                    </show_toolbar>
+                </depends>
+                <description>Leave empty for all products</description>
+            </limit>
         </parameters>
     </custom_listing_specials>
 </widgets>

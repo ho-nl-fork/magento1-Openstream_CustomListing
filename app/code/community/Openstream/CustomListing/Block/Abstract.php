@@ -21,15 +21,15 @@ class Openstream_CustomListing_Block_Abstract extends Mage_Catalog_Block_Product
                 $blockName,
                 array(
                      'show_toolbar' => $this->getData('show_toolbar'),
-                     'list_mode' => $this->getData('list_mode')
+                     'list_mode' => $this->getData('list_mode'),
+                     '_current_limit' => $this->getData('limit')
                 ))
                 ->setChild(
                     $blockName . '_pager',
                     $this->getLayout()->createBlock('page/html_pager', $blockName . '_pager')
                 );
         }
-        parent::_beforeToHtml();
 
-        return $this;
+        return parent::_beforeToHtml();
     }
 }
