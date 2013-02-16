@@ -31,6 +31,23 @@
                 <value>1</value>
                 <source_model>custom_listing/widget_source_listMode</source_model>
             </list_mode>
+            <column_count>
+                <label>Grid Column Count</label>
+                <visible>1</visible>
+                <type>text</type>
+                <value>1</value>
+                <depends>
+                    <list_mode>
+                        <values>
+                            <empty/>
+                            <grid>grid</grid>
+                            <grid_list>grid-list</grid_list>
+                            <list_grid>list-grid</list_grid>
+                        </values>
+                    </list_mode>
+                </depends>
+                <description>Leave empty for default</description>
+            </column_count>
         </parameters>
     </custom_listing_all>
     <custom_listing_attribute type="custom_listing/attribute" translate="name description">
