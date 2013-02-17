@@ -17,11 +17,7 @@ class Openstream_CustomListing_Block_Specials extends Openstream_CustomListing_B
             ), null, 'left')
                 ->addAttributeToSelect('*')
                 ->addStoreFilter();
-            
-            /* @var $productVisibility Mage_Catalog_Model_Product_Visibility */
-            $productVisibility = Mage::getSingleton('catalog/product_visibility');
-            $productVisibility->addVisibleInCatalogFilterToCollection($this->_productCollection);
         }
-        return $this->_productCollection;
+        return parent::_getProductCollection();
     }
 }

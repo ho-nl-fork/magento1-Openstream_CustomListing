@@ -8,6 +8,16 @@ class Openstream_CustomListing_Block_Abstract extends Mage_Catalog_Block_Product
      * @var string
      */
     protected $_defaultToolbarBlock = 'custom_listing/catalog_product_list_toolbar';
+
+
+    protected function _getProductCollection()
+    {
+        /* @var $productVisibility Mage_Catalog_Model_Product_Visibility */
+        $productVisibility = Mage::getSingleton('catalog/product_visibility');
+        $this->_productCollection->setVisibility($productVisibility->getVisibleInCatalogIds());
+
+        return $this->_productCollection;
+    }
     
 
     protected function _beforeToHtml()

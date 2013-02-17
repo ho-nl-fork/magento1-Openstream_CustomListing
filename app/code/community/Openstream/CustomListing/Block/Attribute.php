@@ -10,12 +10,8 @@ class Openstream_CustomListing_Block_Attribute extends Openstream_CustomListing_
                 $this->_productCollection->addAttributeToFilter($attributeCode, array('eq' => $attributeValue))
                                          ->addAttributeToSelect('*')
                                          ->addStoreFilter();
-
-                /* @var $productVisibility Mage_Catalog_Model_Product_Visibility */
-                $productVisibility = Mage::getSingleton('catalog/product_visibility');
-                $productVisibility->addVisibleInCatalogFilterToCollection($this->_productCollection);
             }
         }
-        return $this->_productCollection;
+        return parent::_getProductCollection();
     }
 }
