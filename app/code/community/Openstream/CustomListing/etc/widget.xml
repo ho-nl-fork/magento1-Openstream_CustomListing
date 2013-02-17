@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <widgets>
     <custom_listing_all type="custom_listing/all" translate="name description">
-        <name>All Products</name>
+        <name>Products: All</name>
         <description>Adds the listing of all enabled products of the current store.</description>
         <is_email_compatible>1</is_email_compatible>
         <parameters>
@@ -63,7 +63,7 @@
         </parameters>
     </custom_listing_all>
     <custom_listing_category type="custom_listing/category" translate="name description">
-        <name>Category Products</name>
+        <name>Products: Category</name>
         <description>Adds the listing of products from a certain category.</description>
         <is_email_compatible>1</is_email_compatible>
         <parameters>
@@ -139,7 +139,7 @@
         </parameters>
     </custom_listing_category>
     <custom_listing_attribute type="custom_listing/attribute" translate="name description">
-        <name>Products With Specific Attribute</name>
+        <name>Products: Specific Attribute</name>
         <description>Adds the listing of all products with specific attribute.</description>
         <is_email_compatible>1</is_email_compatible>
         <parameters>
@@ -155,6 +155,19 @@
                     </default>
                 </values>
             </template>
+            <attribute>
+                <label>Attribute</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>1</value>
+                <source_model>custom_listing/widget_source_attributes</source_model>
+            </attribute>
+            <value>
+                <label>Attribute Value</label>
+                <visible>1</visible>
+                <type>text</type>
+                <description/>
+            </value>
             <show_toolbar>
                 <label>Show Toolbar</label>
                 <visible>1</visible>
@@ -201,7 +214,7 @@
         </parameters>
     </custom_listing_attribute>
     <custom_listing_bestsellers type="custom_listing/bestsellers" translate="name description">
-        <name>Bestsellers</name>
+        <name>Products: Bestsellers</name>
         <description>Adds the listing of best selling products of the current store.</description>
         <is_email_compatible>1</is_email_compatible>
         <parameters>
@@ -263,7 +276,7 @@
         </parameters>
     </custom_listing_bestsellers>
     <custom_listing_specials type="custom_listing/specials" translate="name description">
-        <name>Specials</name>
+        <name>Products: Special Price</name>
         <description>Adds the listing of all products with special prices of the current store.</description>
         <is_email_compatible>1</is_email_compatible>
         <parameters>
