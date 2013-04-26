@@ -15,7 +15,7 @@ class Openstream_CustomListing_Block_Catalog_Product_List_Toolbar
 
         $this->_availableOrder = $this->_getConfig()->getAttributeUsedForSortByArray();
         
-        $listMode = $this->getData('list_mode') ?: Mage::getStoreConfig('catalog/frontend/list_mode');
+        $listMode = $this->getData('list_mode') ? $this->getData('list_mode') : Mage::getStoreConfig('catalog/frontend/list_mode');
         switch ($listMode) {
             case 'grid':
                 $this->_availableMode = array('grid' => $this->__('Grid'));
