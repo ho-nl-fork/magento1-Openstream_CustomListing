@@ -126,7 +126,6 @@
                 <label>Product Limit</label>
                 <visible>1</visible>
                 <type>text</type>
-                <value>1</value>
                 <depends>
                     <show_toolbar>
                         <value>0</value>
@@ -200,7 +199,6 @@
                 <label>Product Limit</label>
                 <visible>1</visible>
                 <type>text</type>
-                <value>1</value>
                 <depends>
                     <show_toolbar>
                         <value>0</value>
@@ -261,7 +259,6 @@
                 <label>Product Limit</label>
                 <visible>1</visible>
                 <type>text</type>
-                <value>1</value>
                 <depends>
                     <show_toolbar>
                         <value>0</value>
@@ -322,7 +319,6 @@
                 <label>Product Limit</label>
                 <visible>1</visible>
                 <type>text</type>
-                <value>1</value>
                 <depends>
                     <show_toolbar>
                         <value>0</value>
