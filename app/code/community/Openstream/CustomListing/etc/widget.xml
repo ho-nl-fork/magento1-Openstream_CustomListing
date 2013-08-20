@@ -120,7 +120,7 @@
                         </values>
                     </list_mode>
                 </depends>
-                <description>Leave empty for default</description>
+                <description>How many columns to display. If you leave this value empty the columns are automatically calulated for the device browsing the page and the container the slider is placed in.</description>
             </column_count>
             <limit>
                 <label>Product Limit</label>
