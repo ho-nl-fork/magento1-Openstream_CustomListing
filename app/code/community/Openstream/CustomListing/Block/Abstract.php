@@ -32,6 +32,8 @@ class Openstream_CustomListing_Block_Abstract extends Mage_Catalog_Block_Product
                 array(
                      'show_toolbar' => $this->getData('show_toolbar'),
                      'list_mode' => $this->getData('list_mode'),
+                     '_current_grid_order' => $this->getData('default_order'),
+                     '_current_grid_direction' => $this->getData('default_direction'),
                      '_current_limit' => $this->getData('limit')
                 ))
                 ->setChild(
