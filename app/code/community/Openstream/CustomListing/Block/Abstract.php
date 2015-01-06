@@ -16,6 +16,9 @@ class Openstream_CustomListing_Block_Abstract extends Mage_Catalog_Block_Product
         $productVisibility = Mage::getSingleton('catalog/product_visibility');
         $this->_productCollection->setVisibility($productVisibility->getVisibleInCatalogIds());
 
+        $productStatus = Mage::getSingleton('catalog/product_status');
+        $this->_productCollection->addAttributeToFilter('status', array('in' => $productStatus->getVisibleStatusIds()));
+
         return $this->_productCollection;
     }
     
