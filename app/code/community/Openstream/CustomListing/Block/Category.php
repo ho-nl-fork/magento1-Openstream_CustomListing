@@ -17,6 +17,8 @@ class Openstream_CustomListing_Block_Category extends Openstream_CustomListing_B
                                      ->addAttributeToSelect('*')
                                      ->addStoreFilter();
 
+            Mage::getSingleton('cataloginventory/stock')->addInStockFilterToCollection($this->_productCollection);
+
             $this->prepareSortableFieldsByCategory($category);
 
             if (! Mage::helper('cataloginventory')->isShowOutOfStock()) {
