@@ -15,7 +15,8 @@ class Openstream_CustomListing_Block_Category extends Openstream_CustomListing_B
             $this->_productCollection = Mage::getResourceModel('reports/product_collection');
             $this->_productCollection->addCategoryFilter($category)
                                      ->addAttributeToSelect('*')
-                                     ->addStoreFilter();
+                                     ->addStoreFilter()
+                                     ->addPriceData();
 
             $this->prepareSortableFieldsByCategory($category);
 
