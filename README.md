@@ -32,3 +32,6 @@ This block outputs all products that currently have discounts.
 This block outputs all products with specified attribute set to specified value. Replace ATTRIBUTE_NAME with name of your attribute and ATTRIBUTE_VALUE with value of your attribute if attribute type is text or ID of the value of your attribute if the attribute type is select. The example bellow will output all products by manufacturer with ID = 3.
 
 	{{block type="custom_listing/attribute" name="my_manufacturer" template="catalog/product/list.phtml" attribute="manufacturer" value="3"}}
+
+### About us
+We at H&O build high quality [magento webshops](https://www.h-o.nl/magento-webshops) with a focus on technique. We like sharing our knowledge and interacting with the magento community and making e-commerce even greater.
