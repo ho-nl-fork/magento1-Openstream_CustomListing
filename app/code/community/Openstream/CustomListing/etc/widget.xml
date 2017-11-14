@@ -92,6 +92,14 @@
                     </data>
                 </helper_block>
             </id_path>
+            <ignore_current_category>
+                <label>Ignore Current Category</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>0</value>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <description>Wether or not to ignore 'current category' when building product URLs. It is recommended to turn this on when using this listing on product detail pages.</description>
+            </ignore_current_category>
             <show_toolbar>
                 <label>Show Toolbar</label>
                 <visible>1</visible>
