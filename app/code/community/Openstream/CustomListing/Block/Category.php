@@ -5,6 +5,28 @@ class Openstream_CustomListing_Block_Category extends Openstream_CustomListing_B
 
     protected $_category;
 
+    public function getCacheLifetime()
+    {
+        return false;
+    }
+
+    public function getCacheKeyInfo()
+    {
+        // Fix caching when customlisting/category is added through widget layout updates
+        return array_merge(parent::getCacheKeyInfo(), [
+            $this->getNameInLayout(),
+            $this->getIdPath(),
+        ]);
+    }
+
+    public function getCacheTags()
+    {
+        // Also add category and widget cache tags since block output depends on those as well
+        return array_merge(parent::getCacheTags(), [
+            $this->getCategory()->getCacheTags(),
+            Mage::getModel('widget/widget_instance')->getCacheTags()
+        ]);
+    }
 
     /**
      * @return Mage_Catalog_Model_Category
