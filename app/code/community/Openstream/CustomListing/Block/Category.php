@@ -22,10 +22,11 @@ class Openstream_CustomListing_Block_Category extends Openstream_CustomListing_B
     public function getCacheTags()
     {
         // Also add category and widget cache tags since block output depends on those as well
-        return array_merge(parent::getCacheTags(), [
+        return array_merge(
+            parent::getCacheTags(),
             $this->getCategory()->getCacheTags(),
             Mage::getModel('widget/widget_instance')->getCacheTags()
-        ]);
+        );
     }
 
     /**
